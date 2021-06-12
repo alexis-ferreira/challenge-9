@@ -14,7 +14,145 @@ body
     font-family: 'Barlow';
 }
 
+@media (min-width: 481px) {
+    
+        header
+    {
+        height: 800px;
 
+        background-image: url(../images/desktop/image-header.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: #3FBFFF;
+    }
+
+    header>.headerTop
+    {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header>.headerTop>.logo
+    {
+        margin-left: 40px;
+        margin-top: 40px;
+    }
+
+    header>.headerTop>.menuDesktop>ul
+    {
+        display: flex;
+        justify-content: space-between;
+
+        width: 470px;
+
+        margin-right: 80px;
+        margin-top: 43px;
+    }
+
+    header>.headerTop>.menuDesktop>ul>li>a
+    {
+        text-decoration: none;
+
+        color: white;
+
+        font-size: 14px;
+    }
+
+    header>.headerTop>.menuDesktop>ul>li:last-child>a
+    {
+        color: black;
+
+        font-family: 'Fraunces';
+
+        text-transform: uppercase;
+
+        padding: 20px 30px;
+
+        background-color: white;
+
+        border-radius: 50px;
+    }
+
+    header>.headerTop>.menuResponsive
+    {
+        display: none;
+    }
+
+    header>.headerBottom>.presentation
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header>.headerBottom>.presentation>h2
+    {
+        font-size: 45px;
+        font-family: 'Fraunces', sans-serif;
+        font-weight: 900;
+
+        text-transform: uppercase;
+
+        margin-top: 140px;
+        margin-bottom: 110px;
+
+        color: white;
+
+        letter-spacing: 5px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* --------- MAIN ---------- */
+
+    /* ---> SECTION DESCRIPTION */
+
+    main>.description>.transformYourBand
+    {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    main>.description>.transformYourBand>.containerImg
+    {
+        background-image: url(../images/desktop/image-transform.jpg);
+
+        width: 50%;
+        height: 600px;
+    }
+
+    main>.description>.transformYourBand>.resume
+    {
+        width: 50%;
+    }
+
+    main>.description>div>.resume>.containerTitle
+    {
+        width: 330px;
+
+        font-size: 30px;
+        font-family: 'Fraunces', sans-serif;
+
+        line-height: 35px;
+
+        margin-top: 160px;
+        margin-left: 160px;
+    }
+}
+
+/* ----------- HEADER ------------ */
 
 
 
@@ -58,15 +196,22 @@ body
         margin-top: 30px;
     }
 
+    header>.headerTop>.menuDesktop
+    {
+        display: none;
+    }
+
     header>.headerTop>.menuResponsive
     {
         margin-top: 30px;
         margin-right: 22px;
+
+        display: block;
     }
 
     header>.headerTop>.menuResponsive>#menuBurger
     {
-        display: block;
+        display: none;
 
         width: 330px;
         height: 305px;
@@ -159,7 +304,7 @@ body
         text-align: center;
 
         margin-top: 90px;
-        margin-bottom: 45px;
+        margin-bottom: 60px;
 
         font-size: 30px;
         font-family: 'Fraunces', serif;
@@ -175,6 +320,7 @@ body
 
         color: white;
     }
+
 
 
 
