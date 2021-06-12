@@ -18,452 +18,545 @@ body
 
 
 
-/* ----------- HEADER ------------ */
 
-header
-{
-    height: 538px;
 
-    background-image: url(../images/mobile/image-header.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: #3FBFFF;
-}
 
-header>.headerTop
-{
-    display: flex;
-    justify-content: space-between;
-}
 
-header>.headerTop>.logo
-{
-    margin-left: 25px;
-    margin-top: 30px;
-}
 
-header>.headerTop>.menuResponsive
-{
-    margin-top: 30px;
-    margin-right: 22px;
-}
 
-header>.headerTop>.menuResponsive>.menuBurger
-{
-    display: none;
-}
 
-header>.headerBottom>.presentation
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
 
-header>.headerBottom>.presentation>h2
-{
-    text-align: center;
 
-    margin-top: 90px;
-    margin-bottom: 45px;
+/* ---------- RESPONSIVE --------- */
 
-    font-size: 30px;
-    font-family: 'Fraunces', serif;
-    font-weight: 900;
 
-    text-transform: uppercase;
 
-    line-height: 50px;
+@media (max-width: 480px){
 
-    letter-spacing: 5px;
+    /* ----------- HEADER ------------ */
 
-    width: 305px;
+    header
+    {
+        height: 538px;
 
-    color: white;
-}
+        background-image: url(../images/mobile/image-header.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: #3FBFFF;
+    }
 
+    header>.headerTop
+    {
+        display: flex;
+        justify-content: space-between;
+    }
 
+    header>.headerTop>.logo
+    {
+        margin-left: 25px;
+        margin-top: 30px;
+    }
 
+    header>.headerTop>.menuResponsive
+    {
+        margin-top: 30px;
+        margin-right: 22px;
+    }
 
+    header>.headerTop>.menuResponsive>#menuBurger
+    {
+        display: block;
 
+        width: 330px;
+        height: 305px;
 
+        background-color: white;
 
+        position: absolute;
+        top: 105px;
+        right: 22px;
 
+        opacity: 0;
 
+        transition: top 500ms, opacity 500ms;
 
+        margin: 0 auto;
+    }
 
+    header>.headerTop>.menuResponsive>#menuBurger>.containerSvgCorner
+    {
+        position: relative;
+    }
 
+    header>.headerTop>.menuResponsive>#menuBurger>.containerSvgCorner>.svgCorner
+    {
+        width: 25px;
 
-/* ------------ MAIN ------------- */
+        position: absolute;
+        right: 0;
+        top: -25px;
 
-/* ------> SECTION DESCRIPTION */
+        rotate: 270deg;
 
-main>.description>.transformYourBand>.containerImg
-{
-    background-image: url(../images/mobile/image-transform.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+        fill: white;
+    }
 
-    height: 310px;
-}
+    header>.headerTop>.menuResponsive>#menuBurger>ul
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
-main>.description>.audience>.containerImg
-{
-    background-image: url(../images/mobile/image-stand-out.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+        height: 100%;
+    }
 
-    height: 310px;
-}
+    header>.headerTop>.menuResponsive>#menuBurger>ul>li
+    {
+        margin-bottom: 40px;
+    }
 
-main .description>div>.resume>.containerTitle
-{
-    display: flex;
-    justify-content: center;
+    header>.headerTop>.menuResponsive>#menuBurger>ul>li>a
+    {
+        text-decoration: none;
 
-    margin-top: 68px;
-    margin-bottom: 25px;
-}
+        color: hsl(213, 9%, 39%);
 
-main .description>div>.resume>.containerTitle>h3
-{
-    font-size: 26px;
-    font-family: 'Fraunces', serif;
+        font-size: 16px;
+    }
 
-    width: 270px;
+    header>.headerTop>.menuResponsive>#menuBurger>ul>li:last-child
+    {
+        margin-top: 10px;
+    }
 
-    text-align: center;
+    header>.headerTop>.menuResponsive>#menuBurger>ul>li:last-child>a
+    {
+        color: black;
 
-    line-height: 35px;
-}
+        text-transform: uppercase;
 
-main .description>div>.resume>.containerParagraph>p
-{
-    color:hsl(232, 10%, 55%);
+        font-family: 'Fraunces', serif;
 
-    text-align: center;
+        padding: 20px 30px;
 
-    width: 320px;
+        background-color: hsl(51, 100%, 49%);
 
-    margin: 0 auto;
-    margin-bottom: 35px;
+        border-radius: 50px;
+    }
 
-    font-size: 18px;
+    header>.headerBottom>.presentation
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
-    line-height: 30px;
-}
+    header>.headerBottom>.presentation>h2
+    {
+        text-align: center;
 
-main .description>div>.resume>.containerBtnLearnMore
-{
-    width: 140px;
+        margin-top: 90px;
+        margin-bottom: 45px;
 
-    margin: 0 auto;
-    margin-bottom: 70px;
+        font-size: 30px;
+        font-family: 'Fraunces', serif;
+        font-weight: 900;
 
-    display: flex;
-    justify-content: center;
+        text-transform: uppercase;
 
-    position: relative;
-}
+        line-height: 50px;
 
-main .description>div>.resume>.containerBtnLearnMore>a
-{
-    text-decoration: none;
+        letter-spacing: 5px;
 
-    text-transform: uppercase;
+        width: 305px;
 
-    margin: 0 auto;
+        color: white;
+    }
 
-    color: black;
 
-    font-size: 15px;
-    font-family: 'Fraunces';
 
-    position: relative;
 
-    z-index: 2;
-}
 
-main .description>div>.resume>.containerBtnLearnMore>.borderBtn
-{
-    height: 10px;
-    width: 100%;
 
-    border-radius: 10px;
 
-    background-color: hsl(48, 100%, 90%);
 
-    position: absolute;
-    bottom: -5px;
 
-    z-index: 1;
-}
 
-main .description>div>.resume>.containerBtnLearnMore>.borderBtn2
-{
-    height: 10px;
-    width: 100%;
 
-    border-radius: 10px;
 
-    background-color: hsl(6, 100%, 88%);
 
-    position: absolute;
-    bottom: -5px;
+    /* ------------ MAIN ------------- */
 
-    z-index: 1;
-}
+    /* ------> SECTION DESCRIPTION */
 
-main .description>.graphicDesign
-{
-    background-image: url(../images/mobile/image-graphic-design.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    main>.description>.transformYourBand>.containerImg
+    {
+        background-image: url(../images/mobile/image-transform.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
 
-    height: 600px;
-}
+        height: 310px;
+    }
 
-main .description>.graphicDesign>.resume>.containerTitle
-{
-    color: hsl(167, 40%, 24%);
+    main>.description>.audience>.containerImg
+    {
+        background-image: url(../images/mobile/image-stand-out.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
 
-    padding-top: 405px;
-}
+        height: 310px;
+    }
 
-main .description>.graphicDesign>.resume>.containerParagraph>p
-{
-    color: hsl(167, 40%, 24%);
+    main .description>div>.resume>.containerTitle
+    {
+        display: flex;
+        justify-content: center;
 
-    text-align: center;
+        margin-top: 68px;
+        margin-bottom: 25px;
+    }
 
-    width: 330px;
+    main .description>div>.resume>.containerTitle>h3
+    {
+        font-size: 26px;
+        font-family: 'Fraunces', serif;
 
-    margin: 0 auto;
+        width: 270px;
 
-    font-size: 16px;
-    line-height: 30px;
-}
+        text-align: center;
 
-main .description>.photography
-{
-    background-image: url(../images/mobile/image-photography.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+        line-height: 35px;
+    }
 
-    height: 600px;
-}
+    main .description>div>.resume>.containerParagraph>p
+    {
+        color:hsl(232, 10%, 55%);
 
-main .description>.photography>.resume>.containerTitle
-{
-    color: hsl(167, 40%, 24%);
+        text-align: center;
 
-    padding-top: 405px;
+        width: 320px;
 
-    margin-top: 0;
-}
+        margin: 0 auto;
+        margin-bottom: 35px;
 
-main .description>.photography>.resume>.containerParagraph>p
-{
-    color: hsl(167, 40%, 24%);
+        font-size: 18px;
 
-    text-align: center;
+        line-height: 30px;
+    }
 
-    width: 330px;
+    main .description>div>.resume>.containerBtnLearnMore
+    {
+        width: 140px;
 
-    margin: 0 auto;
+        margin: 0 auto;
+        margin-bottom: 70px;
 
-    font-size: 16px;
-    line-height: 30px;
-}
+        display: flex;
+        justify-content: center;
 
+        position: relative;
+    }
 
+    main .description>div>.resume>.containerBtnLearnMore>a
+    {
+        text-decoration: none;
 
-/* -----> FEEDBACK */
+        text-transform: uppercase;
 
-main>.feedback
-{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+        margin: 0 auto;
 
-main .feedback>.clientTitleFeedback>h3
-{
-    text-transform: uppercase;
+        color: black;
 
-    color: hsl(210, 4%, 67%);
+        font-size: 15px;
+        font-family: 'Fraunces';
 
-    text-align: center;
+        position: relative;
 
-    letter-spacing: 5px;
+        z-index: 2;
+    }
 
-    font-family: 'Fraunces', serif;
-    
-    padding-top: 69px;
+    main .description>div>.resume>.containerBtnLearnMore>.borderBtn
+    {
+        height: 10px;
+        width: 100%;
 
-    font-size: 14px;
-}
+        border-radius: 10px;
 
-main .feedback>.clientFeedback
-{
-    width: 300px;
-}
+        background-color: hsl(48, 100%, 90%);
 
-main .feedback>.clientFeedback>.containerFeedback
-{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+        position: absolute;
+        bottom: -5px;
 
-    padding-top: 65px;
-}
+        z-index: 1;
+    }
 
-main .feedback>.clientFeedback>.containerFeedback:last-child
-{
-    margin-bottom: 90px;
-}
+    main .description>div>.resume>.containerBtnLearnMore>.borderBtn2
+    {
+        height: 10px;
+        width: 100%;
 
-main .feedback>.clientFeedback>.containerFeedback>.picture
-{
-    padding-bottom: 35px;
-}
+        border-radius: 10px;
 
-main .feedback>.clientFeedback>.containerFeedback>.picture>img
-{
-    border-radius: 50%;
+        background-color: hsl(6, 100%, 88%);
 
-    width: 75px;
-}
+        position: absolute;
+        bottom: -5px;
 
-main .feedback>.clientFeedback>.containerFeedback>.paragraphFeedback
-{
-    font-size: 16px;
+        z-index: 1;
+    }
 
-    text-align: center;
+    main .description>.graphicDesign
+    {
+        background-image: url(../images/mobile/image-graphic-design.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
 
-    line-height: 30px;
+        height: 600px;
+    }
 
-    color: hsl(213, 9%, 39%);
+    main .description>.graphicDesign>.resume>.containerTitle
+    {
+        color: hsl(167, 40%, 24%);
 
-    padding-bottom: 30px;
-}
+        padding-top: 405px;
+    }
 
-main .feedback>.clientFeedback>.containerFeedback>.author>p
-{
-    text-align: center;
-}
+    main .description>.graphicDesign>.resume>.containerParagraph>p
+    {
+        color: hsl(167, 40%, 24%);
 
-main .feedback>.clientFeedback>.containerFeedback>.author>p:first-child
-{
-    padding-bottom: 20px;
+        text-align: center;
 
-    font-family: 'Fraunces', serif;
-    font-weight: 900;
-    font-size: 16px;
-}
+        width: 330px;
 
-main .feedback>.clientFeedback>.containerFeedback>.author>p:last-child
-{
-    color: hsl(210, 4%, 67%);
+        margin: 0 auto;
 
-    font-size: 14px;
-}
+        font-size: 16px;
+        line-height: 30px;
+    }
 
+    main .description>.photography
+    {
+        background-image: url(../images/mobile/image-photography.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
 
+        height: 600px;
+    }
 
-/* -----> END MAINE */
+    main .description>.photography>.resume>.containerTitle
+    {
+        color: hsl(167, 40%, 24%);
 
-main>.imgEndMain>.containerImgEndMain
-{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
+        padding-top: 405px;
 
-main>.imgEndMain>.containerImgEndMain>div
-{
-    width: 50%;
-    height: 188px;
+        margin-top: 0;
+    }
 
-    background-size: cover;
-}
+    main .description>.photography>.resume>.containerParagraph>p
+    {
+        color: hsl(167, 40%, 24%);
 
-main>.imgEndMain>.containerImgEndMain>.img1
-{
-    background-image: url(../images/mobile/image-gallery-milkbottles.jpg);
-}
+        text-align: center;
 
-main>.imgEndMain>.containerImgEndMain>.img2
-{
-    background-image: url(../images/mobile/image-gallery-orange.jpg);
-}
+        width: 330px;
 
-main>.imgEndMain>.containerImgEndMain>.img3
-{
-    background-image: url(../images/mobile/image-gallery-cone.jpg);
-}
+        margin: 0 auto;
 
-main>.imgEndMain>.containerImgEndMain>.img4
-{
-    background-image: url(../images/mobile/image-gallery-sugar-cubes.jpg);
-}
+        font-size: 16px;
+        line-height: 30px;
+    }
 
 
 
+    /* -----> FEEDBACK */
 
+    main>.feedback
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
-/* --------- FOOTER --------- */
+    main .feedback>.clientTitleFeedback>h3
+    {
+        text-transform: uppercase;
 
-footer
-{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+        color: hsl(210, 4%, 67%);
 
-    background-color: hsl(168, 34%, 41%);
-}
+        text-align: center;
 
-footer>.containerTitleFooter
-{
-    height: 145px;
+        letter-spacing: 5px;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+        font-family: 'Fraunces', serif;
+        
+        padding-top: 69px;
 
-footer>.menuFooter
-{
-    width: 300px;
+        font-size: 14px;
+    }
 
-    margin-bottom: 90px;
-}
+    main .feedback>.clientFeedback
+    {
+        width: 300px;
+    }
 
-footer>.menuFooter>ul
-{
-    display: flex;
-    justify-content: space-between;
-}
+    main .feedback>.clientFeedback>.containerFeedback
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
-footer>.menuFooter>ul>li>a
-{
-    text-decoration: none;
+        padding-top: 65px;
+    }
 
-    color: hsl(167, 40%, 24%);
-}
+    main .feedback>.clientFeedback>.containerFeedback:last-child
+    {
+        margin-bottom: 90px;
+    }
 
-footer>.socialNetwork
-{
-    width: 165px;
+    main .feedback>.clientFeedback>.containerFeedback>.picture
+    {
+        padding-bottom: 35px;
+    }
 
-    display: flex;
-    justify-content: space-between;
+    main .feedback>.clientFeedback>.containerFeedback>.picture>img
+    {
+        border-radius: 50%;
 
-    margin-bottom: 80px;
+        width: 75px;
+    }
+
+    main .feedback>.clientFeedback>.containerFeedback>.paragraphFeedback
+    {
+        font-size: 16px;
+
+        text-align: center;
+
+        line-height: 30px;
+
+        color: hsl(213, 9%, 39%);
+
+        padding-bottom: 30px;
+    }
+
+    main .feedback>.clientFeedback>.containerFeedback>.author>p
+    {
+        text-align: center;
+    }
+
+    main .feedback>.clientFeedback>.containerFeedback>.author>p:first-child
+    {
+        padding-bottom: 20px;
+
+        font-family: 'Fraunces', serif;
+        font-weight: 900;
+        font-size: 16px;
+    }
+
+    main .feedback>.clientFeedback>.containerFeedback>.author>p:last-child
+    {
+        color: hsl(210, 4%, 67%);
+
+        font-size: 14px;
+    }
+
+
+
+    /* -----> END MAINE */
+
+    main>.imgEndMain>.containerImgEndMain
+    {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    main>.imgEndMain>.containerImgEndMain>div
+    {
+        width: 50%;
+        height: 188px;
+
+        background-size: cover;
+    }
+
+    main>.imgEndMain>.containerImgEndMain>.img1
+    {
+        background-image: url(../images/mobile/image-gallery-milkbottles.jpg);
+    }
+
+    main>.imgEndMain>.containerImgEndMain>.img2
+    {
+        background-image: url(../images/mobile/image-gallery-orange.jpg);
+    }
+
+    main>.imgEndMain>.containerImgEndMain>.img3
+    {
+        background-image: url(../images/mobile/image-gallery-cone.jpg);
+    }
+
+    main>.imgEndMain>.containerImgEndMain>.img4
+    {
+        background-image: url(../images/mobile/image-gallery-sugar-cubes.jpg);
+    }
+
+
+
+
+
+    /* --------- FOOTER --------- */
+
+    footer
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        background-color: hsl(168, 34%, 41%);
+    }
+
+    footer>.containerTitleFooter
+    {
+        height: 145px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer>.menuFooter
+    {
+        width: 300px;
+
+        margin-bottom: 90px;
+    }
+
+    footer>.menuFooter>ul
+    {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    footer>.menuFooter>ul>li>a
+    {
+        text-decoration: none;
+
+        color: hsl(167, 40%, 24%);
+    }
+
+    footer>.socialNetwork
+    {
+        width: 165px;
+
+        display: flex;
+        justify-content: space-between;
+
+        margin-bottom: 80px;
+    }
 }
