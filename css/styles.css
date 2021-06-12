@@ -1,0 +1,93 @@
+@font-face {
+    font-family: "Barlow";
+    src: url(../polices/Barlow/Barlow-SemiBold.ttf);
+}
+
+/* font-family: 'Fraunces', serif; */
+
+
+
+/* ---------- GENERAL ----------- */
+
+body
+{
+    font-family: 'Barlow';
+}
+
+
+
+
+
+/* ----------- HEADER ------------ */
+
+header
+{
+    height: 538px;
+
+    background-image: url(../images/mobile/image-header.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #3FBFFF;
+}
+
+header>.headerTop
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+header>.headerTop>.logo
+{
+    margin-left: 25px;
+    margin-top: 30px;
+}
+
+header>.headerTop>.menuResponsive
+{
+    margin-top: 30px;
+    margin-right: 22px;
+}
+
+header>.headerTop>.menuResponsive>.menuBurger
+{
+    display: none;
+}
+
+header>.headerBottom>.presentation
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header>.headerBottom>.presentation>h2
+{
+    text-align: center;
+
+    margin-top: 90px;
+    margin-bottom: 45px;
+
+    font-size: 30px;
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+
+    text-transform: uppercase;
+
+    line-height: 50px;
+
+    letter-spacing: 5px;
+
+    width: 305px;
+
+    color: white;
+}
+
+
+
+
+
+
+
+/* ------------ MAIN ------------- */
