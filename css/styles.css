@@ -25,7 +25,7 @@ header
     height: 538px;
 
     background-image: url(../images/mobile/image-header.jpg);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-color: #3FBFFF;
@@ -103,8 +103,9 @@ header>.headerBottom>.presentation>h2
 main>.description>.transformYourBand>.containerImg
 {
     background-image: url(../images/mobile/image-transform.jpg);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 
     height: 310px;
 }
@@ -112,8 +113,9 @@ main>.description>.transformYourBand>.containerImg
 main>.description>.audience>.containerImg
 {
     background-image: url(../images/mobile/image-stand-out.jpg);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 
     height: 310px;
 }
@@ -164,6 +166,8 @@ main .description>div>.resume>.containerBtnLearnMore
 
     display: flex;
     justify-content: center;
+
+    position: relative;
 }
 
 main .description>div>.resume>.containerBtnLearnMore>a
@@ -178,4 +182,288 @@ main .description>div>.resume>.containerBtnLearnMore>a
 
     font-size: 15px;
     font-family: 'Fraunces';
+
+    position: relative;
+
+    z-index: 2;
+}
+
+main .description>div>.resume>.containerBtnLearnMore>.borderBtn
+{
+    height: 10px;
+    width: 100%;
+
+    border-radius: 10px;
+
+    background-color: hsl(48, 100%, 90%);
+
+    position: absolute;
+    bottom: -5px;
+
+    z-index: 1;
+}
+
+main .description>div>.resume>.containerBtnLearnMore>.borderBtn2
+{
+    height: 10px;
+    width: 100%;
+
+    border-radius: 10px;
+
+    background-color: hsl(6, 100%, 88%);
+
+    position: absolute;
+    bottom: -5px;
+
+    z-index: 1;
+}
+
+main .description>.graphicDesign
+{
+    background-image: url(../images/mobile/image-graphic-design.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    height: 600px;
+}
+
+main .description>.graphicDesign>.resume>.containerTitle
+{
+    color: hsl(167, 40%, 24%);
+
+    padding-top: 405px;
+}
+
+main .description>.graphicDesign>.resume>.containerParagraph>p
+{
+    color: hsl(167, 40%, 24%);
+
+    text-align: center;
+
+    width: 330px;
+
+    margin: 0 auto;
+
+    font-size: 16px;
+    line-height: 30px;
+}
+
+main .description>.photography
+{
+    background-image: url(../images/mobile/image-photography.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    height: 600px;
+}
+
+main .description>.photography>.resume>.containerTitle
+{
+    color: hsl(167, 40%, 24%);
+
+    padding-top: 405px;
+
+    margin-top: 0;
+}
+
+main .description>.photography>.resume>.containerParagraph>p
+{
+    color: hsl(167, 40%, 24%);
+
+    text-align: center;
+
+    width: 330px;
+
+    margin: 0 auto;
+
+    font-size: 16px;
+    line-height: 30px;
+}
+
+
+
+/* -----> FEEDBACK */
+
+main>.feedback
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .feedback>.clientTitleFeedback>h3
+{
+    text-transform: uppercase;
+
+    color: hsl(210, 4%, 67%);
+
+    text-align: center;
+
+    letter-spacing: 5px;
+
+    font-family: 'Fraunces', serif;
+    
+    padding-top: 69px;
+
+    font-size: 14px;
+}
+
+main .feedback>.clientFeedback
+{
+    width: 300px;
+}
+
+main .feedback>.clientFeedback>.containerFeedback
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 65px;
+}
+
+main .feedback>.clientFeedback>.containerFeedback:last-child
+{
+    margin-bottom: 90px;
+}
+
+main .feedback>.clientFeedback>.containerFeedback>.picture
+{
+    padding-bottom: 35px;
+}
+
+main .feedback>.clientFeedback>.containerFeedback>.picture>img
+{
+    border-radius: 50%;
+
+    width: 75px;
+}
+
+main .feedback>.clientFeedback>.containerFeedback>.paragraphFeedback
+{
+    font-size: 16px;
+
+    text-align: center;
+
+    line-height: 30px;
+
+    color: hsl(213, 9%, 39%);
+
+    padding-bottom: 30px;
+}
+
+main .feedback>.clientFeedback>.containerFeedback>.author>p
+{
+    text-align: center;
+}
+
+main .feedback>.clientFeedback>.containerFeedback>.author>p:first-child
+{
+    padding-bottom: 20px;
+
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    font-size: 16px;
+}
+
+main .feedback>.clientFeedback>.containerFeedback>.author>p:last-child
+{
+    color: hsl(210, 4%, 67%);
+
+    font-size: 14px;
+}
+
+
+
+/* -----> END MAINE */
+
+main>.imgEndMain>.containerImgEndMain
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+main>.imgEndMain>.containerImgEndMain>div
+{
+    width: 50%;
+    height: 188px;
+
+    background-size: cover;
+}
+
+main>.imgEndMain>.containerImgEndMain>.img1
+{
+    background-image: url(../images/mobile/image-gallery-milkbottles.jpg);
+}
+
+main>.imgEndMain>.containerImgEndMain>.img2
+{
+    background-image: url(../images/mobile/image-gallery-orange.jpg);
+}
+
+main>.imgEndMain>.containerImgEndMain>.img3
+{
+    background-image: url(../images/mobile/image-gallery-cone.jpg);
+}
+
+main>.imgEndMain>.containerImgEndMain>.img4
+{
+    background-image: url(../images/mobile/image-gallery-sugar-cubes.jpg);
+}
+
+
+
+
+
+/* --------- FOOTER --------- */
+
+footer
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: hsl(168, 34%, 41%);
+}
+
+footer>.containerTitleFooter
+{
+    height: 145px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer>.menuFooter
+{
+    width: 300px;
+
+    margin-bottom: 90px;
+}
+
+footer>.menuFooter>ul
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer>.menuFooter>ul>li>a
+{
+    text-decoration: none;
+
+    color: hsl(167, 40%, 24%);
+}
+
+footer>.socialNetwork
+{
+    width: 165px;
+
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 80px;
 }
