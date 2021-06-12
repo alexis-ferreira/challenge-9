@@ -90,4 +90,92 @@ header>.headerBottom>.presentation>h2
 
 
 
+
+
+
+
+
+
 /* ------------ MAIN ------------- */
+
+/* ------> SECTION DESCRIPTION */
+
+main>.description>.transformYourBand>.containerImg
+{
+    background-image: url(../images/mobile/image-transform.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    height: 310px;
+}
+
+main>.description>.audience>.containerImg
+{
+    background-image: url(../images/mobile/image-stand-out.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    height: 310px;
+}
+
+main .description>div>.resume>.containerTitle
+{
+    display: flex;
+    justify-content: center;
+
+    margin-top: 68px;
+    margin-bottom: 25px;
+}
+
+main .description>div>.resume>.containerTitle>h3
+{
+    font-size: 26px;
+    font-family: 'Fraunces', serif;
+
+    width: 270px;
+
+    text-align: center;
+
+    line-height: 35px;
+}
+
+main .description>div>.resume>.containerParagraph>p
+{
+    color:hsl(232, 10%, 55%);
+
+    text-align: center;
+
+    width: 320px;
+
+    margin: 0 auto;
+    margin-bottom: 35px;
+
+    font-size: 18px;
+
+    line-height: 30px;
+}
+
+main .description>div>.resume>.containerBtnLearnMore
+{
+    width: 140px;
+
+    margin: 0 auto;
+    margin-bottom: 70px;
+
+    display: flex;
+    justify-content: center;
+}
+
+main .description>div>.resume>.containerBtnLearnMore>a
+{
+    text-decoration: none;
+
+    text-transform: uppercase;
+
+    margin: 0 auto;
+
+    color: black;
+
+    font-size: 15px;
+    font-family: 'Fraunces';
+}
