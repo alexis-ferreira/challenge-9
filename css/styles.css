@@ -163,13 +163,16 @@ body
     {
         color: hsl(232, 10%, 55%);
 
-        width: 450px;
-
         font-size: 18px;
 
         line-height: 30px;
 
         margin-left: 160px;
+    }
+
+    main>.description>div>.resume>.containerParagraph>p
+    {
+        max-width: 450px;
     }
 
     main>.description>div>.resume>.containerBtnLearnMore
