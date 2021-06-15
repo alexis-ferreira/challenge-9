@@ -79,6 +79,8 @@ body
         background-color: white;
 
         border-radius: 50px;
+
+        transition: background-color 300ms, color 300ms;
     }
 
     header>.headerTop>.menuResponsive
@@ -207,7 +209,7 @@ body
         z-index: 2;
     }
 
-    main>.description>div>.resume>.containerBtnLearnMore>.borderBtn
+    main>.description>div>.resume>.containerBtnLearnMore>#borderBtn
     {
         position: absolute;
         bottom: -5px;
@@ -218,9 +220,11 @@ body
         border-radius: 50px;
 
         background-color: hsl(48, 100%, 90%);
+
+        transition: background-color 300ms;
     }
 
-    main>.description>div>.resume>.containerBtnLearnMore>.borderBtn2
+    main>.description>div>.resume>.containerBtnLearnMore>#borderBtn2
     {
         position: absolute;
         bottom: -5px;
@@ -231,6 +235,8 @@ body
         height: 10px;
 
         background-color: hsl(6, 100%, 88%);
+
+        transition: background-color 300ms;
     }
 
     main>.description>.audience
@@ -506,6 +512,8 @@ body
         color: hsl(167, 40%, 24%);
 
         text-decoration: none;
+
+        transition: color 300ms;
     }
 
     footer>.socialNetwork
@@ -514,6 +522,13 @@ body
 
         display: flex;
         justify-content: space-between;
+    }
+
+    footer>.socialNetwork>a>svg>path
+    {
+        fill: hsl(167, 40%, 24%);
+
+        transition: fill 300ms;
     }
 }
 
@@ -791,7 +806,7 @@ body
         z-index: 2;
     }
 
-    main .description>div>.resume>.containerBtnLearnMore>.borderBtn
+    main .description>div>.resume>.containerBtnLearnMore>#borderBtn
     {
         height: 10px;
         width: 100%;
@@ -806,7 +821,7 @@ body
         z-index: 1;
     }
 
-    main .description>div>.resume>.containerBtnLearnMore>.borderBtn2
+    main .description>div>.resume>.containerBtnLearnMore>#borderBtn2
     {
         height: 10px;
         width: 100%;
