@@ -479,7 +479,7 @@ body
     {
         height: 350px;
 
-        background-color: hsl(168, 34%, 41%);
+        background-color: #90D4C4;
 
         display: flex;
         flex-direction: column;
@@ -836,7 +836,7 @@ body
         z-index: 1;
     }
 
-    main .description>.graphicDesign
+    main .description>.containerDesign>.graphicDesign
     {
         background-image: url(../images/mobile/image-graphic-design.jpg);
         background-size: cover;
@@ -846,14 +846,23 @@ body
         height: 600px;
     }
 
-    main .description>.graphicDesign>.resume>.containerTitle
+    main .description>.containerDesign>.graphicDesign>.resume>.containerTitle
     {
         color: hsl(167, 40%, 24%);
 
         padding-top: 405px;
+
+        margin-bottom: 40px;
     }
 
-    main .description>.graphicDesign>.resume>.containerParagraph>p
+    main .description>.containerDesign>.graphicDesign>.resume>.containerTitle>h3
+    {
+        font-size: 25px;
+
+        text-align: center;
+    }
+
+    main .description>.containerDesign>.graphicDesign>.resume>.containerParagraph>p
     {
         color: hsl(167, 40%, 24%);
 
@@ -867,7 +876,7 @@ body
         line-height: 30px;
     }
 
-    main .description>.photography
+    main .description>.containerDesign>.photography
     {
         background-image: url(../images/mobile/image-photography.jpg);
         background-size: cover;
@@ -877,16 +886,24 @@ body
         height: 600px;
     }
 
-    main .description>.photography>.resume>.containerTitle
+    main .description>.containerDesign>.photography>.resume>.containerTitle
     {
         color: hsl(167, 40%, 24%);
 
         padding-top: 405px;
 
         margin-top: 0;
+        margin-bottom: 40px;
     }
 
-    main .description>.photography>.resume>.containerParagraph>p
+    main .description>.containerDesign>.photography>.resume>.containerTitle>h3
+    {
+        font-size: 25px;
+
+        text-align: center;
+    }
+
+    main .description>.containerDesign>.photography>.resume>.containerParagraph>p
     {
         color: hsl(167, 40%, 24%);
 
@@ -995,7 +1012,7 @@ body
 
 
 
-    /* -----> END MAINE */
+    /* -----> END MAIN */
 
     main>.imgEndMain>.containerImgEndMain
     {
@@ -1044,7 +1061,7 @@ body
         flex-direction: column;
         align-items: center;
 
-        background-color: hsl(168, 34%, 41%);
+        background-color: #90D4C4;
     }
 
     footer>.containerTitleFooter
